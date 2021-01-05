@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+</head>
+
+
+
+
+<body>
+
+
+   <form method = "get" name = "mediaform">
+ 
+ 
+    <label for="music">Music</label>
+	<input id="music" type="radio" name="media" value="Music" checked>
+	
+	<label for="movies">Movies</label>
+	<input id="movies" type="radio" name="media" value="Movies">
+	<br/>
+	
+	
+	
+	</form>
+
+
+</body>
+
+
+
+
+<script>
+
+$(document).ready(function() 
+{
+
+
+$("input").click(function()
+{
+
+
+
+if()
+{
+
+$.get("music.html", function(data)
+{
+    alert("Data: " + data)
+});
+
+}
+
+
+else
+{
+
+$.get("movies.html", function(data)
+{
+    alert("Data: " + data)
+});
+
+
+}
+
+
+});
+
+
+});
+
+
+</script>
+
+
+
+</html>
